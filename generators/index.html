@@ -1,0 +1,65 @@
+---
+layout: single-column
+markdown: 0
+title: Generators
+class: discovery-page
+---
+  <section class="main">
+    <small>Your generator must have a GitHub repository description, the `yeoman-generator` keyword and a description in `package.json` to be listed. Official generators are marked with <img src="/assets/img/mustache.svg" width="20px"></small>
+    <div id="plugins-all">
+      <p>Loading generators...</p>
+    </div>
+    <div class="message" id="search-notfound">No matching generator found. Try something else.</div>
+  </section>
+
+  <script type="text/template" id="plugins-all-template">
+    <table class="table">
+      <caption>
+        <input style="display:none" class="search input-medium search-query" type="search" placeholder="Search in <%= modules.length %> generators..." autofocus>
+      </caption>
+      <thead>
+        <tr>
+          <th class="sort" data-sort="name">Generator</th>
+          <th class="sort metadata last-updated" data-sort="updated">Last Updated</th>
+          <th class="sort metadata" data-sort="stars">Stars</th>
+          <th class="sort metadata" data-sort="installs">Installs</th>
+        </tr>
+      </thead>
+      <tbody class="list">
+        <% _.each(modules, function (el) { %>
+          <tr class="<%= el.official %>">
+            <td class="name" colspan="4">
+              <span class="name-info">
+                <span class="name-website">
+                  <% if (el.site) { %>
+                    <a href="<%- el.site %>"><%- el.name %></a>
+                  <% } else { %>
+                    <%- el.name %>
+                  <% } %>
+                </span>
+                <% if (el.owner.name) { %>
+                <span class="name-author">
+                  by
+                  <% if (el.owner.site) { %>
+                    <a href="<%- el.owner.site %>"><%- el.owner.name %></a>
+                  <% } else { %>
+                    <%- el.owner.name %>
+                  <% } %>
+                </span>
+                <% } %>
+                <span class="metadata">
+                  <% if (el.updated) { %>
+                      <span>Last updated: <%- el.updated %> ago</span>
+                  <% } %>
+                  <span><%- el.stars %></span>
+                  <span><%- el.downloads %></span>
+                </span>
+              </span>
+              <br>
+              <span class="desc"><%- el.description %></span>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </script>​
