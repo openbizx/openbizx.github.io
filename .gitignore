@@ -1,5 +1,10 @@
-node_modules
-dist
-.jekyll
-.tmp
+_site/*
+_theme_packages/*
+
+Thumbs.db
 .DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
