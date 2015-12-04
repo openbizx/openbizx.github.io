@@ -1,9 +1,9 @@
-title: Electron
-email: atom@github.com
-description: 'Build cross platform desktop apps with web technologies'
-baseurl: 'http://electron.atom.io'
-twitter_username: ElectronJS
-github_username: atom
+title: Openbizx
+email: agus.suhartonom@gmail.com
+description: 'Metadata Oriented Enterprise Application Framewoek for PHP Language'
+baseurl: 'http://openbizx.github.io'
+twitter_username: openbizx
+github_username: openbizx
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
@@ -15,18 +15,8 @@ current_node: 4.1.1
 current_chrome: 45.0.2454.85
 current_v8: 4.5.103.29
 available_versions:
-    - v0.24.0
-    - v0.25.0
-    - v0.26.0
-    - v0.27.0
-    - v0.28.0
-    - v0.29.0
-    - v0.30.0
-    - v0.31.0
-    - v0.32.0
-    - v0.33.0
-    - v0.34.0
-    - v0.35.0
+    - not yet versioning
+
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
