@@ -4,7 +4,7 @@
 body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #45828E;
-  background-color: #A5ECFA;
+  background-color: #FFFFFF;
 }
 
 h1, h2, h3, h4 {
@@ -86,11 +86,16 @@ section {
   text-align: center;
 }
 
+.electron-does {
+  background-color: #1DB9D8;
+}
+
+
 /* Header Nav */
 
 header {
   padding: 12px 0;
-  background-color: #76C7D7;
+  background-color: #1DB9D8;
 }
 @media (max-width: 550px) {
   header,
