@@ -2,7 +2,7 @@
 title: Openbizx Enterprise PHP Framework
 email: agus.suhartono@gmail.com
 description: 'Simple, Powerfull and Enterprise PHP Framework'  
-baseurl: 'http://openbizx.github.io'
+baseurl: 'http://openbizx.github.io/'
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: openbizx
 github_username:  openbizx
