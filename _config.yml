@@ -1,14 +1,36 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
+title: Openbizx Enterprise PHP Framework
+email: agus.suhartono@gmail.com
+description: 'Simple, Powerfull and Enterprise PHP Framework'  
+baseurl: 'http://openbizx.github.io'
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: openbizx
+github_username:  openbizx
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
+gems:
+    - jekyll-redirect-from
+latest_version: v0.35.0
+current_node: 4.1.1
+current_chrome: 45.0.2454.85
+current_v8: 4.5.103.29
+available_versions:
+    
+collections:
+    docs: {output: true, permalink: '/docs/:path/'}
+defaults:
+    - {scope: {type: docs}, values: {layout: docs}}
+exclude:
+    - node_modules
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - Grunfile.js
+    - package.json
+    - script
+    - spec
