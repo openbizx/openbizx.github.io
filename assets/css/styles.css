@@ -250,19 +250,23 @@ pre code {
   position: relative;
   margin-bottom: 30px;
 }
-.about .item .icon-holder {
+.about .item .icon-holder, 
+.features .item .icon-holder {
   position: absolute;
   left: 30px;
   top: 0;
 }
-.about .item .icon-holder .fa {
+.about .item .icon-holder .fa,
+.features .item .icon-holder .fa {
   font-size: 24px;
   color: #074f66;
 }
-.about .item .content {
+.about .item .content,
+.features .item .content {
   padding-left: 60px;
 }
-.about .item .content .sub-title {
+.about .item .content .sub-title,
+.features .item .content .sub-title{
   margin-top: 0;
   color: #074f66;
   font-size: 18px;
