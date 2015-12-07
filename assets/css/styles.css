@@ -241,7 +241,8 @@ pre code {
   margin-top: 0;
   margin-bottom: 60px;
 }
-.about .intro {
+.about .intro,
+.features .intro {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 60px;
